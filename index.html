@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="AiSiang - Dapur Nusantara di Medan. Pesan menu favoritmu langsung lewat WhatsApp.">
+  <meta name="theme-color" content="#160d0f">
+  <title>AiSiang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css?v=5">
+
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="hero">
+    <meta name="theme-color" content="#faf5eb">
+  <div class="fr">
+    <h1>AiSiang</h1>
+    <div class="sub">Chinnese Food,Binjai</div>
+    <div class="st" id="st"></div><br>
+    <a class="btn" href="#menu">Lihat menu</a>
+  </div>
+</header>
+
+<h2 class="sec" id="menu">Menu</h2>
+<div class="tools">
+  <div class="wrap">
+    <div class="tabs" id="tabs" role="group" aria-label="Kategori menu"></div>
+    <input class="srch" id="q" type="search" placeholder="Cari menu" aria-label="Cari menu">
+  </div>
+</div>
+<main class="wrap" id="list"></main>
+
+
+<section class="visit">
+  <div class="wrap">
+    <h2 class="sec pt-md">Kunjungi kami</h2>
+    <div class="g">
+      <div><b>Alamat</b>Jl. Contoh No. 12, Medan<br>
+        <a href="https://www.google.com/maps/search/?api=1&query=Jl.+Contoh+No.+12+Medan" target="_blank" rel="noopener">Buka di peta</a></div>
+      <div><b>Jam buka</b>Setiap hari<br><span id="jam"></span></div>
+      <div><b>Kontak</b><a id="wal" href="#" target="_blank" rel="noopener">WhatsApp</a><br>@aisiang</div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">&copy; <span id="yr"></span> AiSiang &middot; </footer>
+
+<div class="bar"><button id="open" type="button" disabled></button></div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- Dialog pilihan menu (level pedas, tambahan, dll) -->
+<dialog id="od">
+  <div class="sheet">
+    <button class="x" id="ox" type="button" aria-label="Tutup">&times;</button>
+    <h2 id="ot"></h2>
+    <div id="ob"></div>
+    <button class="btn wide" id="oa" type="button"></button>
+  </div>
+</dialog>
+
+<!-- Dialog keranjang / checkout -->
+<dialog id="dlg">
+  <div class="sheet">
+    <button class="x" id="x" type="button" aria-label="Tutup">&times;</button>
+    <h2>Pesananmu</h2>
+    <div id="rows"></div>
+    <button class="link" id="clr" type="button">Kosongkan pesanan</button>
+
+    <div class="sum" id="sum"></div>
+
+    <label for="nm">Nama</label>
+    <input id="nm" autocomplete="name">
+
+    <label for="ty">Jenis pesanan</label>
+    <select id="ty">
+      <option>Makan di tempat</option>
+    </select>
+
+    <label for="nt" id="ntl">Nomor meja</label>
+    <input id="nt">
+
+    <label for="cat">Catatan (opsional)</label>
+    <textarea id="cat" rows="2" placeholder="Contoh: tanpa bawang, sambal dipisah"></textarea>
+
+    <div class="err" id="err" role="alert"></div>
+    <button class="btn wide" id="send" type="button">Kirim pesanan lewat WhatsApp</button>
+  </div>
+</dialog>
+
+</body>
+</html>

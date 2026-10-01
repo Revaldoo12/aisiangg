@@ -9,24 +9,13 @@
   --sans: "Plus Jakarta Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
 }
 
-/* ===== Warna & tema ===== */
+/* ===== Warna (tema terang saja) ===== */
 :root {
-  --bg: #160d0f; --panel: #1f1316; --ink: #f1e8d8; --mute: #a99a89;
-  --line: #3a2a2c; --gold: #cdaa6d; --on-gold: #1a1108; --err: #e58a7a;
-  color-scheme: dark;
-}
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) {
-    --bg: #faf5eb; --panel: #f1e9d9; --ink: #2a1a1d; --mute: #75655a;
-    --line: #dccfb6; --gold: #8a6522; --on-gold: #fff; --err: #b03a2a;
-    color-scheme: light;
-  }
-}
-:root[data-theme="light"] {
   --bg: #faf5eb; --panel: #f1e9d9; --ink: #2a1a1d; --mute: #75655a;
   --line: #dccfb6; --gold: #8a6522; --on-gold: #fff; --err: #b03a2a;
   color-scheme: light;
 }
+
 
 /* ===== Dasar ===== */
 *, *::before, *::after { box-sizing: border-box; }

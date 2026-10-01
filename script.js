@@ -7,7 +7,7 @@
 var CONFIG = {
   NAMA: "AiSiang",        // nama restoran (dipakai di pesan WhatsApp)
   WA: "6285101708389",    // nomor WhatsApp (format 62..., tanpa + atau 0 di depan)
-  OPEN: 10,               // jam buka (0-23)
+  OPEN: 7,               // jam buka (0-23)
   CLOSE: 22,              // jam tutup (0-23)
   FEE: 8000,              // ongkos antar
   MINDEL: 40000,          // minimal subtotal untuk antar
